@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Toebox.ai - In-Store AI Companion",
-  description: "An AI-powered retail companion that gives every customer a personalized, knowledgeable shopping experience — built for the brands that can't afford to lose a single sale.",
+  title: "Toebox.ai - In-Store AI Assistant",
+  description: "An AI-powered retail assistant that gives every customer a personalized, knowledgeable shopping experience — built for the brands that can't afford to lose a single sale.",
 };
 
 export default function RootLayout({

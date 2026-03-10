@@ -53,7 +53,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block neo-border neo-shadow bg-neo-pink px-4 py-2 mb-6">
-                <span className="font-bold">In-Store AI Companion</span>
+                <span className="font-bold">In-Store AI Assistant</span>
               </div>
               <h1 className="neo-heading text-5xl md:text-6xl lg:text-7xl mb-6">
                 Your best associate,
@@ -61,7 +61,7 @@ export default function Home() {
                 <span className="bg-neo-yellow px-2">on every tablet.</span>
               </h1>
               <p className="text-xl mb-8 max-w-lg">
-                An AI-powered retail companion that gives every customer a personalized, knowledgeable shopping experience — built for the brands that can't afford to lose a single sale.
+                An AI-powered retail assistant that gives every customer a personalized, knowledgeable shopping experience — built for the brands that can't afford to lose a single sale.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a href="#demo" className="neo-btn bg-neo-yellow text-lg">
@@ -195,7 +195,7 @@ export default function Home() {
               {
                 icon: IconBuildingStore,
                 title: "Cross-Store Visibility",
-                desc: "Out of stock here? The companion finds it at your nearest location and can initiate a transfer or direct ship — so you never lose the sale.",
+                desc: "Out of stock here? ToeBox finds it at your nearest location and can initiate a transfer or direct ship — so you never lose the sale.",
                 color: "bg-neo-blue",
               },
               {
@@ -213,7 +213,7 @@ export default function Home() {
               {
                 icon: IconLock,
                 title: "Store-Level Data Isolation",
-                desc: "Each location's companion only sees what's relevant to that store. Your data stays where it belongs, with full authentication and access controls.",
+                desc: "Each location's assistant only sees what's relevant to that store. Your data stays where it belongs, with full authentication and access controls.",
                 color: "bg-neo-purple",
               },
             ].map((feature) => (
@@ -258,7 +258,7 @@ export default function Home() {
               {
                 step: "02",
                 title: "Configure",
-                desc: "We tailor the companion to your brand, your product categories, and your store layout. It learns your catalog so it speaks your language.",
+                desc: "We tailor the assistant to your brand, your product categories, and your store layout. It learns your catalog so it speaks your language.",
                 color: "bg-neo-blue",
               },
               {
@@ -326,7 +326,7 @@ export default function Home() {
               {
                 icon: IconPalette,
                 title: "Your brand, your voice",
-                desc: "The companion is configured to match your tone, your categories, and your customer experience.",
+                desc: "The assistant is configured to match your tone, your categories, and your customer experience.",
               },
             ].map((item) => (
               <div
@@ -357,7 +357,7 @@ export default function Home() {
                 <span className="bg-neo-yellow px-2">your best associate?</span>
               </h2>
               <p className="text-xl mb-8 max-w-2xl mx-auto">
-                See how the in-store AI companion works with your systems, your catalog, and your stores.
+                See how the in-store AI assistant works with your systems, your catalog, and your stores.
               </p>
               <a href="#" className="neo-btn bg-neo-pink text-xl inline-block">
                 Book a Demo
