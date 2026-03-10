@@ -53,7 +53,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block neo-border neo-shadow bg-neo-pink px-4 py-2 mb-6">
-                <span className="font-bold">In-Store AI Assistant</span>
+                <span className="font-bold">In-Store AI Associate</span>
               </div>
               <h1 className="neo-heading text-5xl md:text-6xl lg:text-7xl mb-6">
                 Your best associate,
