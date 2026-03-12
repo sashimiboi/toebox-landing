@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Toebox.ai - In-Store AI Assistant",
   description: "An AI-powered retail assistant that gives every customer a personalized, knowledgeable shopping experience — built for the brands that can't afford to lose a single sale.",
+  icons: {
+    icon: "/toebox-logo.svg",
+  },
 };
 
 export default function RootLayout({
