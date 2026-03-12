@@ -61,7 +61,7 @@ export default function Home() {
                 <span className="bg-neo-yellow px-2">in every store.</span>
               </h1>
               <p className="text-xl mb-8 max-w-lg">
-                An AI-powered shopping assistant that lives right in your Shopify store — giving every visitor a personalized, knowledgeable experience that converts.
+                An AI-powered shopping assistant that lives right in your Shopify store. Every visitor gets a personalized, knowledgeable experience that converts.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a href="#demo" className="neo-btn bg-neo-yellow text-lg">
@@ -118,7 +118,7 @@ export default function Home() {
               {
                 num: "01",
                 title: "Shoppers bounce without answers",
-                desc: "Visitors land on your store with questions. Without instant help, they leave — and they don't come back.",
+                desc: "Visitors land on your store with questions. Without instant help, they leave and don't come back.",
                 color: "bg-neo-pink",
                 icon: IconClock,
               },
@@ -183,7 +183,7 @@ export default function Home() {
               {
                 icon: IconSearch,
                 title: "Smart Product Search",
-                desc: "Customers describe what they need in plain language — \"something comfortable for standing all day\" — and get tailored results from your actual catalog.",
+                desc: "Customers describe what they need in plain language like \"something comfortable for standing all day\" and get tailored results from your actual catalog.",
                 color: "bg-neo-yellow",
               },
               {
@@ -195,7 +195,7 @@ export default function Home() {
               {
                 icon: IconBuildingStore,
                 title: "Cross-Store Visibility",
-                desc: "Running multiple Shopify stores? ToeBox surfaces inventory across all of them — so you never lose a sale to a stockout.",
+                desc: "Running multiple Shopify stores? ToeBox surfaces inventory across all of them so you never lose a sale to a stockout.",
                 color: "bg-neo-blue",
               },
               {
@@ -207,7 +207,7 @@ export default function Home() {
               {
                 icon: IconScale,
                 title: "Side-by-Side Comparisons",
-                desc: "Customers can compare features, materials, and price points across two or three products — helping them decide with confidence, not pressure.",
+                desc: "Customers can compare features, materials, and price points across products. Helps them decide with confidence, not pressure.",
                 color: "bg-neo-orange",
               },
               {
@@ -264,7 +264,7 @@ export default function Home() {
               {
                 step: "03",
                 title: "Go Live",
-                desc: "The AI assistant appears right on your storefront. Shoppers get instant, personalized help — no extra apps or plugins for them to install.",
+                desc: "The AI assistant appears right on your storefront. Shoppers get instant, personalized help with no extra apps or plugins to install.",
                 color: "bg-neo-green",
               },
             ].map((item) => (
@@ -326,7 +326,7 @@ export default function Home() {
               {
                 icon: IconPalette,
                 title: "Your brand, your voice",
-                desc: "The assistant matches your tone, your categories, and your customer experience — not a generic chatbot.",
+                desc: "The assistant matches your tone, your categories, and your customer experience. Not a generic chatbot.",
               },
             ].map((item) => (
               <div
