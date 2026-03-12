@@ -9,7 +9,7 @@ import {
   IconScale,
   IconLock,
   IconPlug,
-  IconDeviceTablet,
+  IconApps,
   IconMapPin,
   IconRocket,
   IconChartBar,
@@ -53,15 +53,15 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block neo-border neo-shadow bg-neo-pink px-4 py-2 mb-6">
-                <span className="font-bold">In-Store AI Associate</span>
+                <span className="font-bold">AI-Powered Shopify App</span>
               </div>
               <h1 className="neo-heading text-5xl md:text-6xl lg:text-7xl mb-6">
                 Your best associate,
                 <br />
-                <span className="bg-neo-yellow px-2">on every tablet.</span>
+                <span className="bg-neo-yellow px-2">in every store.</span>
               </h1>
               <p className="text-xl mb-8 max-w-lg">
-                An AI-powered retail assistant that gives every customer a personalized, knowledgeable shopping experience — built for the brands that can't afford to lose a single sale.
+                An AI-powered shopping assistant that lives right in your Shopify store — giving every visitor a personalized, knowledgeable experience that converts.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a href="#demo" className="neo-btn bg-neo-yellow text-lg">
@@ -78,7 +78,7 @@ export default function Home() {
                   <div className="grid grid-cols-3 gap-4 text-center">
                     <div className="neo-card p-4">
                       <div className="text-4xl font-black text-neo-pink">40%</div>
-                      <div className="text-sm font-bold mt-2">Fewer "let me check" trips</div>
+                      <div className="text-sm font-bold mt-2">Higher conversion rate</div>
                     </div>
                     <div className="neo-card p-4">
                       <div className="text-4xl font-black text-neo-green">2×</div>
@@ -86,7 +86,7 @@ export default function Home() {
                     </div>
                     <div className="neo-card p-4">
                       <div className="text-4xl font-black text-neo-purple">0</div>
-                      <div className="text-sm font-bold mt-2">Lost sales from stockouts</div>
+                      <div className="text-sm font-bold mt-2">Abandoned carts from confusion</div>
                     </div>
                   </div>
                 </div>
@@ -104,12 +104,12 @@ export default function Home() {
               <span className="font-bold">The Problem</span>
             </div>
             <h2 className="neo-heading text-4xl md:text-5xl mb-6 text-neo-white">
-              National chains are investing millions in AI-powered retail experiences.
+              Big brands are investing millions in AI-powered shopping experiences.
               <br />
-              <span className="text-neo-yellow">Independent retailers shouldn't be left behind.</span>
+              <span className="text-neo-yellow">Shopify merchants shouldn't be left behind.</span>
             </h2>
             <p className="text-xl max-w-3xl mx-auto text-neo-cream">
-              Your customers expect the same seamless, intelligent experience they get at big-box stores. But you don't have a 50-person IT team. You need something that works with what you already have.
+              Your shoppers expect the same seamless, intelligent experience they get on major retail sites. But you don't have a 50-person engineering team. You need something that just works with your Shopify store.
             </p>
           </div>
 
@@ -117,29 +117,29 @@ export default function Home() {
             {[
               {
                 num: "01",
-                title: "Peak hour bottlenecks",
-                desc: "Customers leave when they can't get help. Your best associates can only be in one place at a time.",
+                title: "Shoppers bounce without answers",
+                desc: "Visitors land on your store with questions. Without instant help, they leave — and they don't come back.",
                 color: "bg-neo-pink",
                 icon: IconClock,
               },
               {
                 num: "02",
-                title: "Product knowledge gaps",
-                desc: "New hires take months to learn your catalog. Seasonal staff never fully get there. Customers notice.",
+                title: "Product pages aren't enough",
+                desc: "Static descriptions can't answer \"will these fit wide feet?\" or \"which is better for trail running?\" Shoppers need a conversation, not a spec sheet.",
                 color: "bg-neo-blue",
                 icon: IconAlertTriangle,
               },
               {
                 num: "03",
-                title: "Invisible inventory",
-                desc: "A customer wants a size 10 in blue. It's in the back — or at your other location. But nobody knows until it's too late.",
+                title: "Buried catalog, missed sales",
+                desc: "You have hundreds of products but shoppers only see what they search for. The perfect item sits undiscovered three pages deep.",
                 color: "bg-neo-green",
                 icon: IconEye,
               },
               {
                 num: "04",
                 title: "Lost cross-sell opportunities",
-                desc: "A runner buying trail shoes would love to know about your new moisture-wicking socks. But who has time to suggest them?",
+                desc: "A runner buying trail shoes would love to know about your moisture-wicking socks. But a static store can't make that suggestion.",
                 color: "bg-neo-orange",
                 icon: IconCoin,
               },
@@ -174,7 +174,7 @@ export default function Home() {
               <span className="bg-neo-yellow px-2">instantly.</span>
             </h2>
             <p className="text-xl max-w-2xl mx-auto">
-              A tablet-based AI assistant that sits on your sales floor and connects to the systems you already run.
+              An AI assistant embedded in your Shopify store that knows your entire catalog and helps shoppers find exactly what they need.
             </p>
           </div>
 
@@ -189,13 +189,13 @@ export default function Home() {
               {
                 icon: IconPackage,
                 title: "Real-Time Inventory",
-                desc: "Instant size, color, and style availability down to the SKU level. No more walking to the back to check. If it's in stock, your customer knows immediately.",
+                desc: "Instant size, color, and style availability down to the variant level. Shoppers see exactly what's available before they ever hit the cart.",
                 color: "bg-neo-pink",
               },
               {
                 icon: IconBuildingStore,
                 title: "Cross-Store Visibility",
-                desc: "Out of stock here? ToeBox finds it at your nearest location and can initiate a transfer or direct ship — so you never lose the sale.",
+                desc: "Running multiple Shopify stores? ToeBox surfaces inventory across all of them — so you never lose a sale to a stockout.",
                 color: "bg-neo-blue",
               },
               {
@@ -213,7 +213,7 @@ export default function Home() {
               {
                 icon: IconLock,
                 title: "Store-Level Data Isolation",
-                desc: "Each location's assistant only sees what's relevant to that store. Your data stays where it belongs, with full authentication and access controls.",
+                desc: "Each store's assistant only sees what's relevant to that store. Your data stays where it belongs, with full authentication and access controls.",
                 color: "bg-neo-purple",
               },
             ].map((feature) => (
@@ -243,7 +243,7 @@ export default function Home() {
               Live in weeks, <span className="bg-neo-black text-neo-white px-2">not months.</span>
             </h2>
             <p className="text-xl max-w-2xl mx-auto">
-              No rip-and-replace. No massive IT lift. We plug into your existing systems and get you running fast.
+              No developers needed. No complex setup. Install from the Shopify App Store and go live fast.
             </p>
           </div>
 
@@ -251,20 +251,20 @@ export default function Home() {
             {[
               {
                 step: "01",
-                title: "Connect",
-                desc: "We integrate with your existing POS, inventory, and product catalog systems through secure API connections. No new infrastructure required.",
+                title: "Install",
+                desc: "Add ToeBox to your Shopify store in one click. We sync with your product catalog, inventory, and collections automatically.",
                 color: "bg-neo-pink",
               },
               {
                 step: "02",
                 title: "Configure",
-                desc: "We tailor the assistant to your brand, your product categories, and your store layout. It learns your catalog so it speaks your language.",
+                desc: "Tailor the assistant to your brand voice, product categories, and customer experience. It learns your catalog so it speaks your language.",
                 color: "bg-neo-blue",
               },
               {
                 step: "03",
-                title: "Deploy",
-                desc: "A lightweight web app on any tablet. No app store. No special hardware. Your associates and customers can start using it on day one.",
+                title: "Go Live",
+                desc: "The AI assistant appears right on your storefront. Shoppers get instant, personalized help — no extra apps or plugins for them to install.",
                 color: "bg-neo-green",
               },
             ].map((item) => (
@@ -289,7 +289,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="inline-block neo-border neo-shadow bg-neo-green px-4 py-2 mb-6">
-              <span className="font-bold">Built For Independent Retail</span>
+              <span className="font-bold">Built For Shopify Merchants</span>
             </div>
             <h2 className="neo-heading text-4xl md:text-5xl mb-6">
               Enterprise AI, <span className="bg-neo-pink px-2">without the enterprise price tag.</span>
@@ -300,33 +300,33 @@ export default function Home() {
             {[
               {
                 icon: IconPlug,
-                title: "Works with your current stack",
-                desc: "Integrates with the POS and inventory systems you already use. No migration required.",
+                title: "Native Shopify integration",
+                desc: "Syncs with your products, collections, and inventory automatically. No APIs to configure.",
               },
               {
-                icon: IconDeviceTablet,
-                title: "Runs on any tablet",
-                desc: "Browser-based web app. iPad, Android, Surface — if it has a browser, it works.",
+                icon: IconApps,
+                title: "One-click install",
+                desc: "Add it from the Shopify App Store. No code, no developers, no headaches.",
               },
               {
                 icon: IconMapPin,
-                title: "Multi-location ready",
-                desc: "Data isolation per store with cross-location inventory visibility when you need it.",
+                title: "Multi-store ready",
+                desc: "Running multiple Shopify stores? Each one gets its own tailored assistant with shared intelligence.",
               },
               {
                 icon: IconRocket,
-                title: "Pilot in 90 days",
-                desc: "Start with one store, prove the ROI, then scale across your footprint.",
+                title: "Live in minutes",
+                desc: "Install, configure your brand voice, and go live. Start converting more shoppers today.",
               },
               {
                 icon: IconChartBar,
                 title: "Measurable impact",
-                desc: "Track conversion lift, basket size, and associate efficiency from day one.",
+                desc: "Track conversion lift, average order value, and engagement from your Shopify dashboard.",
               },
               {
                 icon: IconPalette,
                 title: "Your brand, your voice",
-                desc: "The assistant is configured to match your tone, your categories, and your customer experience.",
+                desc: "The assistant matches your tone, your categories, and your customer experience — not a generic chatbot.",
               },
             ].map((item) => (
               <div
@@ -357,7 +357,7 @@ export default function Home() {
                 <span className="bg-neo-yellow px-2">your best associate?</span>
               </h2>
               <p className="text-xl mb-8 max-w-2xl mx-auto">
-                See how the in-store AI assistant works with your systems, your catalog, and your stores.
+                See how the AI shopping assistant works with your Shopify store, your catalog, and your brand.
               </p>
               <a href="#" className="neo-btn bg-neo-pink text-xl inline-block">
                 Book a Demo
