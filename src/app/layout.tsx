@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Toebox.ai - In-Store AI Assistant",
-  description: "An AI-powered retail assistant that gives every customer a personalized, knowledgeable shopping experience — built for the brands that can't afford to lose a single sale.",
+  title: "ToeBox - AI Agent Builder for Shopify",
+  description: "Build AI agents, chatbots, and automations for your Shopify store. Connect 30+ integrations, query your data, and deploy intelligent agents in minutes.",
   icons: {
     icon: "/toebox-logo.svg",
   },

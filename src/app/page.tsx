@@ -2,22 +2,24 @@
 
 import Image from "next/image";
 import {
-  IconSearch,
-  IconPackage,
-  IconBuildingStore,
-  IconBolt,
-  IconScale,
-  IconLock,
+  IconRobot,
+  IconMessageChatbot,
   IconPlug,
-  IconApps,
-  IconMapPin,
-  IconRocket,
+  IconDatabase,
   IconChartBar,
+  IconLock,
+  IconBolt,
+  IconApps,
+  IconRocket,
   IconPalette,
-  IconAlertTriangle,
+  IconBrandShopee,
+  IconTerminal2,
   IconClock,
+  IconAlertTriangle,
   IconEye,
   IconCoin,
+  IconServer,
+  IconApi,
 } from "@tabler/icons-react";
 
 export default function Home() {
@@ -30,7 +32,7 @@ export default function Home() {
             <div className="flex items-center gap-2">
               <Image
                 src="/toebox-logo.svg"
-                alt="Toebox.ai"
+                alt="ToeBox"
                 width={40}
                 height={36}
                 className="h-9 w-auto"
@@ -39,9 +41,10 @@ export default function Home() {
             </div>
             <div className="hidden md:flex items-center gap-6">
               <a href="#problem" className="font-bold hover:text-neo-pink transition-colors">Problem</a>
-              <a href="#features" className="font-bold hover:text-neo-pink transition-colors">Features</a>
+              <a href="#features" className="font-bold hover:text-neo-pink transition-colors">Platform</a>
+              <a href="#integrations" className="font-bold hover:text-neo-pink transition-colors">Integrations</a>
               <a href="#how-it-works" className="font-bold hover:text-neo-pink transition-colors">How It Works</a>
-              <a href="#demo" className="neo-btn bg-neo-yellow">Book a Demo</a>
+              <a href="#demo" className="neo-btn bg-neo-yellow">Get Started</a>
             </div>
           </div>
         </div>
@@ -53,22 +56,22 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block neo-border neo-shadow bg-neo-pink px-4 py-2 mb-6">
-                <span className="font-bold">AI-Powered Shopify App</span>
+                <span className="font-bold">AI Agent Builder for Shopify</span>
               </div>
               <h1 className="neo-heading text-5xl md:text-6xl lg:text-7xl mb-6">
-                Your best associate,
+                Build AI agents
                 <br />
-                <span className="bg-neo-yellow px-2">in every store.</span>
+                <span className="bg-neo-yellow px-2">for your store.</span>
               </h1>
               <p className="text-xl mb-8 max-w-lg">
-                An AI-powered shopping assistant that lives right in your Shopify store. Every visitor gets a personalized, knowledgeable experience that converts.
+                Create custom AI agents, deploy chatbot widgets, connect 30+ integrations, and query all your data from one platform. Built natively for Shopify.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a href="#demo" className="neo-btn bg-neo-yellow text-lg">
-                  Book a Demo
+                  Get Started Free
                 </a>
                 <a href="#features" className="neo-btn bg-neo-white text-lg">
-                  See Capabilities
+                  See Platform
                 </a>
               </div>
             </div>
@@ -77,16 +80,16 @@ export default function Home() {
                 <div className="neo-border bg-neo-blue p-6 -rotate-1">
                   <div className="grid grid-cols-3 gap-4 text-center">
                     <div className="neo-card p-4">
-                      <div className="text-4xl font-black text-neo-pink">40%</div>
-                      <div className="text-sm font-bold mt-2">Higher conversion rate</div>
+                      <div className="text-4xl font-black text-neo-pink">30+</div>
+                      <div className="text-sm font-bold mt-2">Integrations ready</div>
                     </div>
                     <div className="neo-card p-4">
-                      <div className="text-4xl font-black text-neo-green">2×</div>
-                      <div className="text-sm font-bold mt-2">Faster product discovery</div>
+                      <div className="text-4xl font-black text-neo-green">5m</div>
+                      <div className="text-sm font-bold mt-2">Setup to live</div>
                     </div>
                     <div className="neo-card p-4">
-                      <div className="text-4xl font-black text-neo-purple">0</div>
-                      <div className="text-sm font-bold mt-2">Abandoned carts from confusion</div>
+                      <div className="text-4xl font-black text-neo-purple">MCP</div>
+                      <div className="text-sm font-bold mt-2">Protocol native</div>
                     </div>
                   </div>
                 </div>
@@ -104,12 +107,12 @@ export default function Home() {
               <span className="font-bold">The Problem</span>
             </div>
             <h2 className="neo-heading text-4xl md:text-5xl mb-6 text-neo-white">
-              Big brands are investing millions in AI-powered shopping experiences.
+              Your store data is scattered across dozens of tools.
               <br />
-              <span className="text-neo-yellow">Shopify merchants shouldn't be left behind.</span>
+              <span className="text-neo-yellow">Your team shouldn&apos;t need to be engineers to use AI.</span>
             </h2>
             <p className="text-xl max-w-3xl mx-auto text-neo-cream">
-              Your shoppers expect the same seamless, intelligent experience they get on major retail sites. But you don't have a 50-person engineering team. You need something that just works with your Shopify store.
+              Klaviyo, Gorgias, Recharge, your warehouse, your Shopify admin. AI could connect all of it, but building agents from scratch costs months and a dev team.
             </p>
           </div>
 
@@ -117,29 +120,29 @@ export default function Home() {
             {[
               {
                 num: "01",
-                title: "Shoppers bounce without answers",
-                desc: "Visitors land on your store with questions. Without instant help, they leave and don't come back.",
+                title: "Data lives in silos",
+                desc: "Orders in Shopify, support in Gorgias, marketing in Klaviyo, revenue in Stripe. No single view of your business.",
                 color: "bg-neo-pink",
                 icon: IconClock,
               },
               {
                 num: "02",
-                title: "Product pages aren't enough",
-                desc: "Static descriptions can't answer \"will these fit wide feet?\" or \"which is better for trail running?\" Shoppers need a conversation, not a spec sheet.",
+                title: "AI setup is too complex",
+                desc: "Connecting LLMs to your store data requires API keys, prompt engineering, and infrastructure most merchants don't have.",
                 color: "bg-neo-blue",
                 icon: IconAlertTriangle,
               },
               {
                 num: "03",
-                title: "Buried catalog, missed sales",
-                desc: "You have hundreds of products but shoppers only see what they search for. The perfect item sits undiscovered three pages deep.",
+                title: "Generic chatbots fail",
+                desc: "Off-the-shelf chat widgets don't know your catalog, can't check inventory, and give wrong answers that hurt your brand.",
                 color: "bg-neo-green",
                 icon: IconEye,
               },
               {
                 num: "04",
-                title: "Lost cross-sell opportunities",
-                desc: "A runner buying trail shoes would love to know about your moisture-wicking socks. But a static store can't make that suggestion.",
+                title: "No way to automate",
+                desc: "Repetitive tasks like answering sizing questions, checking order status, or recommending products still require manual work.",
                 color: "bg-neo-orange",
                 icon: IconCoin,
               },
@@ -161,59 +164,59 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Platform Features Section */}
       <section id="features" className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="inline-block neo-border neo-shadow bg-neo-blue px-4 py-2 mb-6">
-              <span className="font-bold">What It Does</span>
+              <span className="font-bold">The Platform</span>
             </div>
             <h2 className="neo-heading text-4xl md:text-5xl mb-6">
-              Everything your customer needs to know,
+              Agents, chatbots, data,
               <br />
-              <span className="bg-neo-yellow px-2">instantly.</span>
+              <span className="bg-neo-yellow px-2">all in one place.</span>
             </h2>
             <p className="text-xl max-w-2xl mx-auto">
-              An AI assistant embedded in your Shopify store that knows your entire catalog and helps shoppers find exactly what they need.
+              ToeBox gives you the building blocks to create AI-powered experiences for your Shopify store without writing code.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                icon: IconSearch,
-                title: "Smart Product Search",
-                desc: "Customers describe what they need in plain language like \"something comfortable for standing all day\" and get tailored results from your actual catalog.",
+                icon: IconRobot,
+                title: "AI Agent Builder",
+                desc: "Create custom agents for customer support, product recommendations, order management, and more. Choose your model, set the system prompt, and deploy.",
                 color: "bg-neo-yellow",
               },
               {
-                icon: IconPackage,
-                title: "Real-Time Inventory",
-                desc: "Instant size, color, and style availability down to the variant level. Shoppers see exactly what's available before they ever hit the cart.",
+                icon: IconMessageChatbot,
+                title: "Chatbot Widgets",
+                desc: "Embed branded chat widgets on your storefront. Customize colors, behavior, suggested prompts, and connect any agent to power the conversation.",
                 color: "bg-neo-pink",
               },
               {
-                icon: IconBuildingStore,
-                title: "Cross-Store Visibility",
-                desc: "Running multiple Shopify stores? ToeBox surfaces inventory across all of them so you never lose a sale to a stockout.",
+                icon: IconDatabase,
+                title: "Data & Analytics",
+                desc: "Query your connected data warehouses with SQL. Build dashboards with drag-and-drop charts, KPIs, and filters. Share with your team.",
                 color: "bg-neo-blue",
               },
               {
-                icon: IconBolt,
-                title: "Intelligent Recommendations",
-                desc: "Activity-based suggestions powered by your product data and real customer reviews. Every recommendation is backed by what actual buyers have said.",
+                icon: IconPlug,
+                title: "30+ Integrations",
+                desc: "Connect Klaviyo, Gorgias, Stripe, Recharge, Zendesk, Snowflake, BigQuery, and more. Each integration becomes queryable by your agents.",
                 color: "bg-neo-green",
               },
               {
-                icon: IconScale,
-                title: "Side-by-Side Comparisons",
-                desc: "Customers can compare features, materials, and price points across products. Helps them decide with confidence, not pressure.",
+                icon: IconTerminal2,
+                title: "MCP Server",
+                desc: "Expose your agents as MCP tools for Claude, Cursor, VS Code, and any MCP-compatible client. Your store data, accessible from any AI tool.",
                 color: "bg-neo-orange",
               },
               {
                 icon: IconLock,
-                title: "Store-Level Data Isolation",
-                desc: "Each store's assistant only sees what's relevant to that store. Your data stays where it belongs, with full authentication and access controls.",
+                title: "Multi-Tenant Security",
+                desc: "Row-level security isolates every store's data. API keys, GDPR compliance, and encrypted credentials come built-in. Your data stays yours.",
                 color: "bg-neo-purple",
               },
             ].map((feature) => (
@@ -232,6 +235,39 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Integrations Section */}
+      <section id="integrations" className="py-20 px-4 bg-neo-black text-neo-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <div className="inline-block neo-border bg-neo-green px-4 py-2 mb-6 text-neo-black">
+              <span className="font-bold">Integrations</span>
+            </div>
+            <h2 className="neo-heading text-4xl md:text-5xl mb-6 text-neo-white">
+              Connect everything.
+              <br />
+              <span className="text-neo-yellow">Query anything.</span>
+            </h2>
+            <p className="text-xl max-w-2xl mx-auto text-neo-cream">
+              Every integration becomes a data source your agents can access. Test connections, browse schemas, and run queries from the ToeBox dashboard.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            {[
+              "Shopify", "Klaviyo", "Gorgias", "Stripe", "Recharge", "Zendesk",
+              "Judge.me", "HubSpot", "ShipStation", "Postscript", "Yotpo", "Attentive",
+              "Triple Whale", "Smile.io", "Loop Returns", "AfterShip", "Segment", "ShipBob",
+              "Snowflake", "BigQuery", "PostgreSQL", "MySQL", "MongoDB", "ClickHouse",
+              "QuickBooks", "Okendo", "LoyaltyLion", "Stamped.io", "Skio", "Northbeam",
+            ].map((name) => (
+              <div key={name} className="neo-border bg-neo-white text-neo-black p-3 text-center font-bold text-sm">
+                {name}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* How It Works Section */}
       <section id="how-it-works" className="py-20 px-4 bg-neo-yellow">
         <div className="max-w-7xl mx-auto">
@@ -240,10 +276,10 @@ export default function Home() {
               <span className="font-bold">How It Works</span>
             </div>
             <h2 className="neo-heading text-4xl md:text-5xl mb-6">
-              Live in weeks, <span className="bg-neo-black text-neo-white px-2">not months.</span>
+              Live in minutes, <span className="bg-neo-black text-neo-white px-2">not months.</span>
             </h2>
             <p className="text-xl max-w-2xl mx-auto">
-              No developers needed. No complex setup. Install from the Shopify App Store and go live fast.
+              Install from the Shopify App Store. No developers, no infrastructure, no complexity.
             </p>
           </div>
 
@@ -251,20 +287,20 @@ export default function Home() {
             {[
               {
                 step: "01",
-                title: "Install",
-                desc: "Add ToeBox to your Shopify store in one click. We sync with your product catalog, inventory, and collections automatically.",
+                title: "Install & Connect",
+                desc: "One-click install from the Shopify App Store. Your products, orders, and customers sync automatically. Connect Klaviyo, Gorgias, or any integration in seconds.",
                 color: "bg-neo-pink",
               },
               {
                 step: "02",
-                title: "Configure",
-                desc: "Tailor the assistant to your brand voice, product categories, and customer experience. It learns your catalog so it speaks your language.",
+                title: "Build Agents",
+                desc: "Create AI agents tailored to your use case. Customer support, product recommendations, order tracking. Choose a model, set a prompt, enable Shopify tools.",
                 color: "bg-neo-blue",
               },
               {
                 step: "03",
-                title: "Go Live",
-                desc: "The AI assistant appears right on your storefront. Shoppers get instant, personalized help with no extra apps or plugins to install.",
+                title: "Deploy Everywhere",
+                desc: "Add a chatbot widget to your storefront, expose agents via MCP for Claude and Cursor, or use the API. Your agents work where your team works.",
                 color: "bg-neo-green",
               },
             ].map((item) => (
@@ -289,44 +325,44 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="inline-block neo-border neo-shadow bg-neo-green px-4 py-2 mb-6">
-              <span className="font-bold">Built For Shopify Merchants</span>
+              <span className="font-bold">Why ToeBox</span>
             </div>
             <h2 className="neo-heading text-4xl md:text-5xl mb-6">
-              Enterprise AI, <span className="bg-neo-pink px-2">without the enterprise price tag.</span>
+              Enterprise AI, <span className="bg-neo-pink px-2">Shopify simple.</span>
             </h2>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                icon: IconPlug,
+                icon: IconBrandShopee,
                 title: "Native Shopify integration",
-                desc: "Syncs with your products, collections, and inventory automatically. No APIs to configure.",
+                desc: "Built as an embedded Shopify app. Products, orders, and customers sync automatically via Shopify MCP.",
               },
               {
                 icon: IconApps,
                 title: "One-click install",
-                desc: "Add it from the Shopify App Store. No code, no developers, no headaches.",
+                desc: "Add from the Shopify App Store. No code, no developers, no infrastructure to manage.",
               },
               {
-                icon: IconMapPin,
-                title: "Multi-store ready",
-                desc: "Running multiple Shopify stores? Each one gets its own tailored assistant with shared intelligence.",
+                icon: IconServer,
+                title: "MCP protocol native",
+                desc: "Your agents are MCP tools. Connect them to Claude Desktop, Claude Code, Cursor, or any MCP client.",
               },
               {
                 icon: IconRocket,
                 title: "Live in minutes",
-                desc: "Install, configure your brand voice, and go live. Start converting more shoppers today.",
+                desc: "Install, create an agent, deploy a chatbot. Start automating customer interactions today.",
               },
               {
                 icon: IconChartBar,
-                title: "Measurable impact",
-                desc: "Track conversion lift, average order value, and engagement from your Shopify dashboard.",
+                title: "Analytics built in",
+                desc: "Query any connected data source with SQL. Build dashboards, track token usage, and monitor agent performance.",
               },
               {
-                icon: IconPalette,
-                title: "Your brand, your voice",
-                desc: "The assistant matches your tone, your categories, and your customer experience. Not a generic chatbot.",
+                icon: IconApi,
+                title: "Bring your own keys",
+                desc: "Use your Anthropic, OpenAI, or OpenRouter API keys. Pay for what you use with no markup on model costs.",
               },
             ].map((item) => (
               <div
@@ -346,22 +382,87 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Pricing Preview */}
+      <section className="py-20 px-4 bg-neo-cream">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-16">
+            <div className="inline-block neo-border neo-shadow bg-neo-purple px-4 py-2 mb-6">
+              <span className="font-bold">Pricing</span>
+            </div>
+            <h2 className="neo-heading text-4xl md:text-5xl mb-6">
+              Start free. <span className="bg-neo-yellow px-2">Scale as you grow.</span>
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                name: "Free",
+                price: "$0",
+                desc: "Get started with the basics",
+                features: ["1 agent", "1 chatbot widget", "100 API credits/mo", "Shopify integration"],
+                color: "bg-neo-white",
+                cta: "Start Free",
+              },
+              {
+                name: "Pro",
+                price: "$49",
+                desc: "For growing stores",
+                features: ["10 agents", "5 chatbot widgets", "5,000 API credits/mo", "30+ integrations", "Analytics dashboards", "MCP server access"],
+                color: "bg-neo-yellow",
+                cta: "Start Free Trial",
+              },
+              {
+                name: "Enterprise",
+                price: "Custom",
+                desc: "For multi-store operations",
+                features: ["Unlimited agents", "Unlimited widgets", "Unlimited credits", "All integrations", "Custom model support", "Priority support"],
+                color: "bg-neo-white",
+                cta: "Contact Sales",
+              },
+            ].map((plan) => (
+              <div key={plan.name} className={`neo-border-thick neo-shadow-lg ${plan.color} p-8 flex flex-col`}>
+                <h3 className="font-black text-2xl mb-1">{plan.name}</h3>
+                <div className="flex items-baseline gap-1 mb-2">
+                  <span className="font-black text-4xl">{plan.price}</span>
+                  {plan.price !== "Custom" && <span className="text-sm font-bold">/mo</span>}
+                </div>
+                <p className="text-sm mb-6">{plan.desc}</p>
+                <ul className="space-y-2 mb-8 flex-1">
+                  {plan.features.map((f) => (
+                    <li key={f} className="text-sm flex items-start gap-2">
+                      <span className="font-black text-neo-green">+</span> {f}
+                    </li>
+                  ))}
+                </ul>
+                <a href="#demo" className="neo-btn bg-neo-pink text-center w-full block">{plan.cta}</a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section id="demo" className="py-20 px-4 bg-neo-black text-neo-white">
         <div className="max-w-4xl mx-auto text-center">
           <div className="neo-border-thick bg-neo-white text-neo-black p-12 neo-shadow-xl rotate-1">
             <div className="-rotate-1">
               <h2 className="neo-heading text-4xl md:text-5xl mb-6">
-                Ready to give every customer
+                Ready to build
                 <br />
-                <span className="bg-neo-yellow px-2">your best associate?</span>
+                <span className="bg-neo-yellow px-2">your first AI agent?</span>
               </h2>
               <p className="text-xl mb-8 max-w-2xl mx-auto">
-                See how the AI shopping assistant works with your Shopify store, your catalog, and your brand.
+                Install ToeBox from the Shopify App Store and start building agents that know your catalog, connect your tools, and serve your customers.
               </p>
-              <a href="#" className="neo-btn bg-neo-pink text-xl inline-block">
-                Book a Demo
-              </a>
+              <div className="flex flex-wrap justify-center gap-4">
+                <a href="https://apps.shopify.com" className="neo-btn bg-neo-pink text-xl inline-block">
+                  Install on Shopify
+                </a>
+                <a href="https://app.toebox.ai" className="neo-btn bg-neo-yellow text-xl inline-block">
+                  Open Dashboard
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -373,14 +474,19 @@ export default function Home() {
           <div className="flex items-center gap-2">
             <Image
               src="/toebox-logo.svg"
-              alt="Toebox.ai"
+              alt="ToeBox"
               width={32}
               height={29}
               className="h-7 w-auto"
             />
             <span className="font-black">ToeBox</span>
           </div>
-          <p className="text-sm">&copy; 2026 All rights reserved.</p>
+          <div className="flex gap-6 text-sm font-bold">
+            <a href="https://app.toebox.ai/privacy" className="hover:text-neo-pink transition-colors">Privacy</a>
+            <a href="https://app.toebox.ai/terms" className="hover:text-neo-pink transition-colors">Terms</a>
+            <a href="mailto:support@toebox.ai" className="hover:text-neo-pink transition-colors">Support</a>
+          </div>
+          <p className="text-sm">&copy; 2026 ToeBox. All rights reserved.</p>
         </div>
       </footer>
     </main>
