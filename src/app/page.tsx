@@ -394,44 +394,62 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                name: "Free",
-                price: "$0",
-                desc: "Get started with the basics",
-                features: ["1 agent", "1 chatbot widget", "100 API credits/mo", "Shopify integration"],
+                name: "Free Trial",
+                price: "Free",
+                desc: "Try ToeBox free for 14 days. No credit card required.",
+                features: ["1 AI agent", "1 chatbot widget", "2 integrations", "1,000 API credits/month", "Shopify MCP access", "Community support"],
                 color: "bg-neo-white",
                 cta: "Start Free",
+                highlight: false,
+              },
+              {
+                name: "Starter",
+                price: "$49.99",
+                desc: "For small stores getting started with AI automation.",
+                features: ["3 AI agents", "3 chatbot widgets", "5 integrations", "50,000 API credits/month", "Custom tools", "Basic analytics", "Email support"],
+                color: "bg-neo-white",
+                cta: "Start Free Trial",
+                highlight: false,
               },
               {
                 name: "Pro",
-                price: "$49",
-                desc: "For growing stores",
-                features: ["10 agents", "5 chatbot widgets", "5,000 API credits/mo", "30+ integrations", "Analytics dashboards", "MCP server access"],
+                price: "$149.99",
+                desc: "For growing brands that need advanced AI capabilities.",
+                features: ["10 AI agents", "10 chatbot widgets", "15 integrations", "150,000 API credits/month", "Multi-agent orchestration", "Full analytics & dashboards", "Custom branding", "Priority support"],
                 color: "bg-neo-yellow",
                 cta: "Start Free Trial",
+                highlight: true,
               },
               {
                 name: "Enterprise",
-                price: "Custom",
-                desc: "For multi-store operations",
-                features: ["Unlimited agents", "Unlimited widgets", "Unlimited credits", "All integrations", "Custom model support", "Priority support"],
+                price: "$249.99",
+                desc: "For high-volume stores and brands needing full control.",
+                features: ["Unlimited agents", "Unlimited chatbot widgets", "Unlimited integrations", "250,000 API credits/month", "Unlimited team members", "Multi-agent orchestration", "Full analytics & dashboards", "Custom branding", "Dedicated support"],
                 color: "bg-neo-white",
-                cta: "Contact Sales",
+                cta: "Start Free Trial",
+                highlight: false,
               },
             ].map((plan) => (
-              <div key={plan.name} className={`neo-border-thick neo-shadow-lg ${plan.color} p-8 flex flex-col`}>
-                <h3 className="font-black text-2xl mb-1">{plan.name}</h3>
+              <div key={plan.name} className={`neo-border-thick neo-shadow-lg ${plan.color} p-8 flex flex-col relative`}>
+                {plan.highlight && (
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 neo-border bg-neo-blue px-4 py-1">
+                    <span className="font-bold text-sm">Most Popular</span>
+                  </div>
+                )}
+                <h3 className="font-black text-xl mb-1">{plan.name}</h3>
                 <div className="flex items-baseline gap-1 mb-2">
-                  <span className="font-black text-4xl">{plan.price}</span>
-                  {plan.price !== "Custom" && <span className="text-sm font-bold">/mo</span>}
+                  <span className="font-black text-3xl">{plan.price}</span>
+                  {plan.price !== "Free" && <span className="text-sm font-bold">/mo</span>}
                 </div>
-                <p className="text-sm mb-6">{plan.desc}</p>
+                <p className="text-sm mb-6 text-gray-600">{plan.desc}</p>
+                <hr className="border-gray-300 mb-4" />
                 <ul className="space-y-2 mb-8 flex-1">
                   {plan.features.map((f) => (
                     <li key={f} className="text-sm flex items-start gap-2">
-                      <span className="font-black text-neo-green">+</span> {f}
+                      <span className="font-black text-neo-green flex-shrink-0">&#10003;</span> {f}
                     </li>
                   ))}
                 </ul>
