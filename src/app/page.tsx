@@ -64,7 +64,7 @@ export default function Home() {
                 <span className="bg-neo-yellow px-2">for your store.</span>
               </h1>
               <p className="text-xl mb-8 max-w-lg">
-                Create custom AI agents, deploy chatbot widgets, connect 30+ integrations, and query all your data from one platform. Built natively for Shopify.
+                Create custom AI agents, deploy chatbot widgets, connect 30+ integrations, and query all your data from one platform. Built natively for Shopify and TikTok Shop.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a href="#demo" className="neo-btn bg-neo-yellow text-lg">
