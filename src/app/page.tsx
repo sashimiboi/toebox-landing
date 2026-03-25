@@ -472,7 +472,7 @@ export default function Home() {
                 <span className="bg-neo-yellow px-2">your first AI agent?</span>
               </h2>
               <p className="text-xl mb-8 max-w-2xl mx-auto">
-                Install ToeBox from the Shopify App Store and start building agents that know your catalog, connect your tools, and serve your customers.
+                Install ToeBox from the Shopify App Store or authenticate through TikTok Shop and start building agents that know your catalog, connect your tools, and serve your customers.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <a href="https://apps.shopify.com" className="neo-btn bg-neo-pink text-xl inline-block">
