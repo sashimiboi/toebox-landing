@@ -385,7 +385,7 @@ export default function Home() {
 
       {/* Pricing Preview */}
       <section id="pricing" className="py-20 px-4 bg-neo-cream">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="inline-block neo-border neo-shadow bg-neo-purple px-4 py-2 mb-6">
               <span className="font-bold">Pricing</span>
