@@ -328,7 +328,7 @@ export default function Home() {
               <span className="font-bold">Why ToeBox</span>
             </div>
             <h2 className="neo-heading text-4xl md:text-5xl mb-6">
-              Enterprise AI, <span className="bg-neo-pink px-2">Shopify simple.</span>
+              Enterprise AI, <span className="bg-neo-pink px-2">Solo simple.</span>
             </h2>
           </div>
 
