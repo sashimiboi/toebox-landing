@@ -42,9 +42,9 @@ export default function Home() {
             <div className="hidden md:flex items-center gap-6">
               <a href="#problem" className="font-bold hover:text-neo-pink transition-colors">Problem</a>
               <a href="#features" className="font-bold hover:text-neo-pink transition-colors">Platform</a>
+              <a href="#pricing" className="font-bold hover:text-neo-pink transition-colors">Pricing</a>
               <a href="#integrations" className="font-bold hover:text-neo-pink transition-colors">Integrations</a>
               <a href="#how-it-works" className="font-bold hover:text-neo-pink transition-colors">How It Works</a>
-              <a href="#pricing" className="font-bold hover:text-neo-pink transition-colors">Pricing</a>
               <a href="#demo" className="neo-btn bg-neo-yellow">Get Started</a>
             </div>
           </div>
