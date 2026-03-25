@@ -44,6 +44,7 @@ export default function Home() {
               <a href="#features" className="font-bold hover:text-neo-pink transition-colors">Platform</a>
               <a href="#integrations" className="font-bold hover:text-neo-pink transition-colors">Integrations</a>
               <a href="#how-it-works" className="font-bold hover:text-neo-pink transition-colors">How It Works</a>
+              <a href="#pricing" className="font-bold hover:text-neo-pink transition-colors">Pricing</a>
               <a href="#demo" className="neo-btn bg-neo-yellow">Get Started</a>
             </div>
           </div>
@@ -383,7 +384,7 @@ export default function Home() {
       </section>
 
       {/* Pricing Preview */}
-      <section className="py-20 px-4 bg-neo-cream">
+      <section id="pricing" className="py-20 px-4 bg-neo-cream">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <div className="inline-block neo-border neo-shadow bg-neo-purple px-4 py-2 mb-6">
@@ -394,7 +395,7 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
             {[
               {
                 name: "Free Trial",
@@ -433,7 +434,7 @@ export default function Home() {
                 highlight: false,
               },
             ].map((plan) => (
-              <div key={plan.name} className={`neo-border-thick neo-shadow-lg ${plan.color} p-8 flex flex-col relative`}>
+              <div key={plan.name} className={`neo-border-thick neo-shadow-lg ${plan.color} p-8 flex flex-col relative h-full`}>
                 {plan.highlight && (
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 neo-border bg-neo-blue px-4 py-1">
                     <span className="font-bold text-sm">Most Popular</span>
@@ -453,7 +454,7 @@ export default function Home() {
                     </li>
                   ))}
                 </ul>
-                <a href="#demo" className="neo-btn bg-neo-pink text-center w-full block">{plan.cta}</a>
+                <a href="#demo" className="neo-btn bg-neo-pink text-center w-full block mt-auto">{plan.cta}</a>
               </div>
             ))}
           </div>
