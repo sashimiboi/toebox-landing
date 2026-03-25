@@ -257,7 +257,7 @@ export default function Home() {
               "Shopify", "Klaviyo", "Gorgias", "Stripe", "Recharge", "Zendesk",
               "Judge.me", "HubSpot", "ShipStation", "Postscript", "Yotpo", "Attentive",
               "Triple Whale", "Smile.io", "Loop Returns", "AfterShip", "Segment", "ShipBob",
-              "Snowflake", "BigQuery", "PostgreSQL", "MySQL", "MongoDB", "ClickHouse",
+              "TikTok", "Snowflake", "BigQuery", "PostgreSQL", "MySQL", "MongoDB", "ClickHouse",
               "QuickBooks", "Okendo", "LoyaltyLion", "Stamped.io", "Skio", "Northbeam",
             ].map((name) => (
               <div key={name} className="neo-border bg-neo-white text-neo-black p-3 text-center font-bold text-sm">
