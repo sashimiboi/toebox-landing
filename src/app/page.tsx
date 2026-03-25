@@ -113,7 +113,7 @@ export default function Home() {
               <span className="text-neo-yellow">Your team shouldn&apos;t need to be engineers to use AI.</span>
             </h2>
             <p className="text-xl max-w-3xl mx-auto text-neo-cream">
-              Klaviyo, Gorgias, Recharge, your warehouse, your Shopify admin. AI could connect all of it, but building agents from scratch costs months and a dev team.
+              Klaviyo, Gorgias, Recharge, your warehouse, your Shopify admin, your TikTok Shop. AI could connect all of it, but building agents from scratch costs months and a dev team.
             </p>
           </div>
 
